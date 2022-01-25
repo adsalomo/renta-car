@@ -41,6 +41,24 @@ public class CarUnitTest {
 		
 	}
 	
+	@Test
+	public void createCar() {
+		
+		Car car = new Car();
+		car.setId(1);
+		car.setPlaca("JNR423");
+		car.setColor("Rojo");
+		car.setModelo("2021");
+		car.setMarca("Renault");
+		
+		when(carRepository.save(car)).thenReturn(car);
+		
+		assertEquals(car.getId(), 1);
+		
+		assertEquals(car.getPlaca(), "JNR423");
+		
+	}
+	
 	private List<Car> getCars() {
 		
 		List<Car> cars = new ArrayList<>();

@@ -22,10 +22,5 @@ public class CarService {
 		List<Car> cars = (List<Car>) carRepository.findAll();
 		return cars;
 	}
-	
-	public Car getById(int id) {
-		Car car = carRepository.findById(id).orElse(null);
-		return car;
-	}
 	 
 }

@@ -26,10 +26,10 @@ public class CarUnitTestInt {
 		Car car = new Car();
 		
 		car.setColor("Rojo");
-		car.setMarca("BMW");
-		car.setModelo("2022");
-		car.setNumeroPuertas("4");
-		car.setPlaca("777-888");
+		car.setBrand("BMW");
+		car.setModel("2022");
+		car.setNumberDoors("4");
+		car.setLicencePlate("777-888");
 		
 		carService.createCar(car);
 		

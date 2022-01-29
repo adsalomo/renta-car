@@ -46,16 +46,16 @@ public class CarUnitTest {
 		
 		Car car = new Car();
 		car.setId(1);
-		car.setPlaca("JNR423");
+		car.setLicencePlate("JNR423");
 		car.setColor("Rojo");
-		car.setModelo("2021");
-		car.setMarca("Renault");
+		car.setModel("2021");
+		car.setBrand("Renault");
 		
 		when(carRepository.save(car)).thenReturn(car);
 		
 		assertEquals(car.getId(), 1);
 		
-		assertEquals(car.getPlaca(), "JNR423");
+		assertEquals(car.getLicencePlate(), "JNR423");
 		
 	}
 	
@@ -65,10 +65,10 @@ public class CarUnitTest {
 		
 		Car car = new Car();
 		car.setId(1);
-		car.setPlaca("JNR423");
+		car.setLicencePlate("JNR423");
 		car.setColor("Rojo");
-		car.setModelo("2021");
-		car.setMarca("Renault");
+		car.setModel("2021");
+		car.setBrand("Renault");
 		
 		cars.add(car);
 		

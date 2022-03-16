@@ -19,6 +19,8 @@ public class CarService {
 	}
 	
 	public List<Car> getCars() {
+		// select * from car;
+		// select * from car where car_id = ?
 		List<Car> cars = (List<Car>) carRepository.findAll();
 		return cars;
 	}

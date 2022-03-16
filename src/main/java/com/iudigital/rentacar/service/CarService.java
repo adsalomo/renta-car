@@ -24,5 +24,13 @@ public class CarService {
 		List<Car> cars = (List<Car>) carRepository.findAll();
 		return cars;
 	}
+	
+	public List<Car> getCarsByBrandAndColor(String brand, String color) {
+		return carRepository.findByBrandAndColor(brand, color);
+	}
+	
+	public List<Car> getCarsByBrand(String brand) {
+		return carRepository.findByBrand(brand);
+	}
 	 
 }

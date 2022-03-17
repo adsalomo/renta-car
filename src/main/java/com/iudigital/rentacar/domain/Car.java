@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "car")
+@Table(name = "cars")
 public class Car {
 
 	@Id
@@ -19,6 +19,7 @@ public class Car {
 	private String color;
 	private String model;
 	private String brand;
+	@Column(name = "anio")
 	private String year;
 	@Column(name = "fuel_type")
 	private String fuelType;
